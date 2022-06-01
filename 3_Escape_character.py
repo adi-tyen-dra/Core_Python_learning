@@ -25,7 +25,7 @@ print(str6)
 str6_1 = """this \
 line has been \
 split over multiple \
-lines but fixed"""   #esc char esc the end of line combining it
+lines but fixed"""   #esc char esc the end of line combining the parts of string it essentially helps in avoiding the use of \ with ' or " and supports readability
 print(str6_1)
 
 str7 ="C:\\user\\timmy\\notes.txt"   #here \helps esc \ itself
