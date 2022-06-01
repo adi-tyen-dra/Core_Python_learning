@@ -2,8 +2,10 @@
 str1 = "this string is \nprinted in \nmore than\n one\nline"   #\n--> brings the cursor to new line
 print(str1)
 
-str2 = "12345678\t2345678\t3345678\t4"   #\t--> brings a fixed whitespace between text
-print(str2)
+str2_1= "12345678\t2345678\t345678\t4"   #\t--> brings a fixed whitespace between text
+str2_2= "helloooo\thellooooo\th"    # \t provides fixed space between the first char of string and the string after it if the no. of char increases the no. of spaces then space is counted from next char at position= old_char_position+space 
+print(str2_1)
+print(str2_2)
 
 str3 = 'The pet shop owner said, "No, no \'e\'s uhm..., he\'s sleeping"'   #\' to esc single quote in a string enclosed by ''
 print(str3)
