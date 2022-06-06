@@ -18,3 +18,6 @@ print(type(age))
 age = "24 years" # the new val rebounded to age changes its data type.
 print(type(age))
 #Python's property of being dynamically-typed- if the type of a variable is checked during run-time.
+
+#A strongly-typed programming language is one in which each type of data (such as integer, character, hexadecimal, packed decimal, and so forth) is predefined as part of the programming language and all constants or variables defined for a given program must be described with one of the data types.
+#hence python is a stronglytyped language.
