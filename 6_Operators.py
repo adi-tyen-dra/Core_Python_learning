@@ -16,3 +16,12 @@ for i in range (1,4):   #loop prints integer till 3
   
 #an expression is a combination of operators, operands or other expressions that can be interprated to some valuea.
 #here, leaving the a and b in line 1 and 2 (not being evaluated) along with i in line 14 (not being evaluated) rest all are expression
+
+i = 1    #here as well i is not an expressionn as it is not being evaluated in line 23, 24, out
+print(i)
+i = 2
+print(i)
+i = 3
+print(i)
+
+# Operator precedance
