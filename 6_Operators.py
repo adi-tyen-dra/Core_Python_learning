@@ -25,3 +25,11 @@ i = 3
 print(i)
 
 # Operator precedance
+
+print(a+b/3-4*12) #ans=-35 this is because python follows mathematical format to solve arithmetic expressions
+print((a+(b/3))-(4*12)) #the expression is equivalent to the upper one
+print(((a+b)/3)-4)*12) #ans=12 as the brackets are introduced the way of solving the expression changes
+#precedance=> brackets > exponential > division=multiplication > additio=substraction 
+#if operators have equal precedance then the one found first from the left is simplified first 
+#expression can also be breaken down into smaller units for convenience in case of larger values
+
