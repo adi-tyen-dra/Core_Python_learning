@@ -32,4 +32,7 @@ print(((a+b)/3)-4)*12) #ans=12 as the brackets are introduced the way of solving
 #precedance=> brackets > exponential > division=multiplication > additio=substraction 
 #if operators have equal precedance then the one found first from the left is simplified first 
 #expression can also be breaken down into smaller units for convenience in case of larger values
-
+c = a+b 
+d = c/3
+e = d-4
+print(e*12) #same equation as above just broken down to parts
