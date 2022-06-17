@@ -39,3 +39,16 @@ print(abc[-4:25]) #ans= wxy
 print(abc[-4:21]) #ans= <nothing>, this happens irrespective of the positive or negative index, cuz the stop index lies leftwards w.r.t the start index 
 
 #slicing with step value => string[start_index:stop_index:steps]
+
+print(abc[0:10:3]) # ans = adgj here 3 becomes the step so every third char is printed within start and stop
+#default step is 1
+
+#minor application demonstration 
+
+num = "9,567:345-654.698,456;342 223-345"
+separators = num[1::4] # all the puntuation marks collected
+print(separators)
+
+values = "".join(char if char not in separators else " " for char in num).split()
+print([int(val) for val in values]) 
+# the code above brings out the values separately removing all the puntuatuin marks
