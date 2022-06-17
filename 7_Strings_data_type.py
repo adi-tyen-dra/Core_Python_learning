@@ -20,6 +20,7 @@ print(parrot + "\n" + parrot[-11] + "\n" + parrot[-10] + "\n" + parrot[-5] + "\n
 #firstly looking at slicing without step value
 # Note: the char where the slicing stops isn't included in the end result
 
+# Sclicing with positive index.
 a = "hello there, how are you?"
 print(a[0:3]) # start=0; stop=3 so, "ans = hel"
 print(a[5:7]) # here start = 5 and stop = 7 so "ans = <blank>t"
@@ -29,3 +30,10 @@ n = 4 #just a random var
 print(a[:]) # this prints the entire string as it is
 print(a[n:]+a[:n]) # irrespective of n, such setup will always produce the entire string
 print(a[2:4] + a[7:9]) # ll+he = llhe
+
+# Sclicing with negative index.
+      #012345678901234567890123456
+abc = "abcdefghijklmnopqrstuvwxyz"
+print(abc[-4:-1]) #ans= wxy
+print(abc[-4:25]) #ans= wxy
+print(abc[-4:21]) #ans= <nothing>, this happens irrespective of the positive or negative index, cuz the stop index lies leftwards w.r.t the start index 
