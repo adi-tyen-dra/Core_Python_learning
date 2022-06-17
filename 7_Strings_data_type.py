@@ -19,8 +19,13 @@ print(parrot + "\n" + parrot[-11] + "\n" + parrot[-10] + "\n" + parrot[-5] + "\n
 #slicing comprises of start, stop and a step value 
 #firstly looking at slicing without step value
 # Note: the char where the slicing stops isn't included in the end result
+
 a = "hello there, how are you?"
 print(a[0:3]) # start=0; stop=3 so, "ans = hel"
 print(a[5:7]) # here start = 5 and stop = 7 so "ans = <blank>t"
 print(a[:5]) # another way to specify the start of sclicing at index of first char, "ans = hello"
 print(a[7:]) # another way to specify the end of slicing at index of last char+1, "ans = here, how are you?"
+n = 4 #just a random var
+print(a[:]) # this prints the entire string as it is
+print(a[n:]+a[:n]) # irrespective of n, such setup will always produce the entire string
+print(a[2:4] + a[7:9]) # ll+he = llhe
