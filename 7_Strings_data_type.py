@@ -58,4 +58,5 @@ print([int(val) for val in values])
 #note: back slicing- start_index towards left of stop_index and step = -ve
 backwards = abc[25:0:-1] #all the alphabects will be printed backwards due to neg step value, not printing "a" as its the stop value
 print(backwards)
-print(abc[25::-1])#to include a we need to omit the stop value
+print(abc[25::-1]) #to include a we need to omit the stop value
+print(abc[::-1]) #same result will be produced if we omit both start and stop value
