@@ -60,3 +60,16 @@ backwards = abc[25:0:-1] #all the alphabects will be printed backwards due to ne
 print(backwards)
 print(abc[25::-1]) #to include a we need to omit the stop value
 print(abc[::-1]) #same result will be produced if we omit both start and stop value
+
+ ##MINI CHALLENGE##
+# => using the abc string produce the followed string using slicing, qpo; edcba; last eight alphabets in rev order
+
+#my solution-
+print(abc[-10:-13:-1]) #produces qpo
+print(abc[-22::-1]) #produces edcba
+print(abc[25:17:-1]) #produces last eight alphabets in rev order
+
+#common notion-
+x = 2
+print(abc[-x:]) # prints last x characters till the end of string; works for all values of x less than string length
+print(abc[:x]) # prints first x characters till x within the string; if x exceeds the limit of string length nothing more will be printed
