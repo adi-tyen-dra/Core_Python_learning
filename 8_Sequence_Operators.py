@@ -32,3 +32,35 @@ print("he" in string1) #true
 print("er" in string2) #true
 print("us" in string3) #false
 print("hmm" in "zmmmhummkumdum") #false
+
+#String replacement fields
+#to use or display str value along side int we can used these method
+
+age = 24
+print("My age is " + str(age) + " years") #here str func converts int to string stopping the error to arrise
+
+#better method in python 3 for the same-
+print("My age is {0} years".format(age)) #will give the same output as above
+
+#another example-
+print("there are {0} days in {1}, {2}, {3}, {4}, {5}, {6} and {7}"
+      .format(31,"jan","mar","may","jul","aug","oct","dec")) 
+
+#NOTE: breaking code into many lines in python is an effecient practice, longer lines of code is frowned upon
+print("jan: {2}, feb: {0}, mar: {2}, apr: {1}, may: {2}, jun: {1}, jul: {2}, aug: {2}, sep: {1}, oct: {2}, nov: {1}, dec: {2},"
+     .format(28,30,31)) #here all the 0 val are replaced by 28, 1 by 30 and 2 by 31
+#hence repetation and unorderedness is allowed in .format 
+print() #blank line
+
+print("""jan: {2}
+feb: {0}
+mar: {2}
+apr: {1}
+may: {2}
+jun: {1}
+jul: {2}
+aug: {2}
+sep: {1}
+oct: {2}
+nov: {1}
+dec: {2}""".format(28,30,31)) #increasing the readability
