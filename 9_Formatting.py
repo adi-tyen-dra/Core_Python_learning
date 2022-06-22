@@ -51,3 +51,10 @@ for i in range (1,13):  #a loop from 1 to 12
 print(f"pi is approximately {22/7:20.16f}")
 pi = 22/7
 print(f"pi is approximately {pi:30.28f}")
+
+#interpolation from python 2 might be removed from newer versions
+age=20
+major="years"
+print("my age is %d %s and %d %s"%(age,major,6,"months"))
+#for float val along with precision-
+print("val of pie is %60.50f"%(22/7))
