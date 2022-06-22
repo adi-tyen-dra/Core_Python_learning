@@ -40,3 +40,8 @@ print("pi is approximately {0:57.54f}".format(22/7))
 #pi is approximately 3.14285714285714279370
 #pi is approximately 3.14285714285714279370154144999105483293533325195312
 #pi is approximately  3.142857142857142793701541449991054832935333251953125000
+
+#note: incase of ordered value we don't have to specify the order and can still use after collon formattings
+for i in range (1,13):  #a loop from 1 to 12
+        print("No. {} squared = {} and cubed = {:4}" 
+             .format(i,i**2,i**3)) 
