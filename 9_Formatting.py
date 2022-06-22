@@ -11,6 +11,12 @@ for i in range (1,13):  #a loop from 1 to 12
              .format(i,i**2,i**3)) 
 print()
 
+#incase of integer or float when fl.v is specified and no. is shorter then the extra white space can be replaced by 0 as follows 
+#note: rule is only applicable for the left side of int part where significance of digit is 0
+#incase of int no. people use d, (similar to f in float but its presence doesn't make difference in most cases)
+print ("{0:07.3f} + {1:03} = {2:02d}".format(1.234,2,3)) #ans- 001.234 + 002 = 03
+
+print()
 #the formatting technique can also be used to justify the decimal digit precision after the no. along with field val
 
 #if field val < default float val (15) + no. of int digits + point place then it prints the val of given with default float val
