@@ -52,7 +52,7 @@ print(f"pi is approximately {22/7:20.16f}")
 pi = 22/7
 print(f"pi is approximately {pi:30.28f}")
 
-#interpolation from python 2 might be removed from newer versions
+#interpolation from python 2 might be removed from newer versions; its use in python 3 is not recommended
 age=20
 major="years"
 print("my age is %d %s and %d %s"%(age,major,6,"months"))
