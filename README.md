@@ -1,0 +1,4 @@
+# Core_Python_learning
+My coding journey while learning the core Python.
+
+The purpose of this repository is to serve as a quick access provider to the set of code for reviewing or revising different concepts in python times of need.
