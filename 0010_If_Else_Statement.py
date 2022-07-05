@@ -37,3 +37,17 @@ else:
 #converse of this statement won't give us the same result as order is important here
 #Note: ctrl+forward slash can comment out multiple lines at once in most py ide
 
+#guessing game
+#sample 1, ans fixed
+ans = 5
+print("please enter a number between 1 to 10")
+guess = int(input())
+if ans > guess:
+    print("try guessin higher")
+elif ans < guess:               #checked only when "if" is false
+    print("try guessing lower")
+else:                           #checked only when both "if" and "elif" are false
+    print("bravo you did it!")
+
+#if-elif is used when at an instance only one of them can be true
+#if-if is used when at an instance both can be true
