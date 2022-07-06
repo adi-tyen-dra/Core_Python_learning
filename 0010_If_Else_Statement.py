@@ -51,3 +51,18 @@ else:                           #checked only when both "if" and "elif" are fals
 
 #if-elif is used when at an instance only one of them can be true
 #if-if is used when at an instance both can be true
+
+#adding a second guess option
+ans = 5
+print("please enter a number between 1 to 10")
+guess = int(input())
+if ans > guess:
+    print("try guessin higher")
+    if ans == guess:
+        print("you've guessed correctly")
+elif ans < guess:
+    print("try guessing lower")
+    if ans == guess:
+        print("you've guessed correctly")
+else:
+    print("bravo you did it!")
