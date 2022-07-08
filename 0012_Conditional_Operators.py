@@ -22,7 +22,7 @@ guess = int(input())
 #     print("bravo you did it!")
 
 #below is the effecient form of code using appropriate conditional operators
-if ans != guess:
+if ans != guess: # this line
     if ans > guess:
         print('guess higher')
     if ans < guess:
@@ -35,7 +35,7 @@ if ans != guess:
 else:
     print("bravo you got it in the first go")
 
-#challenge-> change line25 to "if ans == guess:" and make appropriate changes to the program to get same output
+#challenge-> change "this line" to "if ans == guess:" and make appropriate changes to the program to get same output
 
 #my solution
 if ans == guess:
@@ -52,8 +52,11 @@ else:
         print("sorry you didn't make it")
 
 # and, and or conditionals
-# and gives true for a pair of conditions only if both are true else false
-# or gives true for a pair of conditions if atleast one of the condition is true else false
+# AND gives true for a pair of conditions only if both are true else false
+# OR gives true for a pair of conditions if atleast one of the condition is true else false
+#note: python stops checking condition in:
+#AND if one "false" is found 
+#OR if one true is found
 #elample code-
 num = int(input())
 if num >= 1 and num <= 10:               #it is underlined as ide suggests simplified chaned comparison
@@ -65,8 +68,5 @@ if num > 20 or num % 2 == 0:
 else:
     print('or condition is not satisfied')
     
-# Simplified chained comparison simply means that the comparison statement can be simplified to a further easier statement
+# Simplified chained comparison appears to suggest that the comparison statement can be simplified by chaining together
 # In above case  "num >= 1 and num <= 10" can be changed to "1 <= num <= 10" giving the same output
-#note: python stops checking condition in:
-#AND if one "false" is found 
-#OR if one true is found
