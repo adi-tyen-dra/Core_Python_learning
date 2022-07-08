@@ -50,3 +50,17 @@ else:
         print('good job you did it')
     else:
         print("sorry you didn't make it")
+
+# and, and or conditionals
+# and gives true for a pair of conditions only if both are true else false
+# or gives true for a pair of conditions if atleast one of the condition is true else false
+#elample code-
+num = int(input())
+if num >= 1 and num <= 10:
+    print('and condition is satisfied')
+else:
+    print('and condition is not satisfied')
+if num > 20 or num % 2 == 0:
+    print('or condition is satisfied')
+else:
+    print('or condition is not satisfied')
