@@ -56,7 +56,7 @@ else:
 # or gives true for a pair of conditions if atleast one of the condition is true else false
 #elample code-
 num = int(input())
-if num >= 1 and num <= 10:
+if num >= 1 and num <= 10:               #it is underlined as ide suggests simplified chaned comparison
     print('and condition is satisfied')
 else:
     print('and condition is not satisfied')
@@ -64,3 +64,9 @@ if num > 20 or num % 2 == 0:
     print('or condition is satisfied')
 else:
     print('or condition is not satisfied')
+    
+# Simplified chained comparison simply means that the comparison statement can be simplified to a further easier statement
+# In above case  "num >= 1 and num <= 10" can be changed to "1 <= num <= 10" giving the same output
+#note: python stops checking condition in:
+#AND if one "false" is found 
+#OR if one true is found
