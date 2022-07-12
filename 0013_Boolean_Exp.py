@@ -57,7 +57,7 @@ else:
 name = input("please enter your name ")
 if name:
     age = int(input("please enter your age in numerics "))
-    if 18<=age<30:
+    if 18<=age<31:
         print("congratulations {} you are eligible for holiday package".format(name))
     else:
         print("Sorry {} you aren't eligible for the pakage".format(name))
