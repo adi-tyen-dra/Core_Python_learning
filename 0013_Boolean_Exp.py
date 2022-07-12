@@ -47,3 +47,19 @@ else:
 # Returns a lowercase copy of the string. doesnt work on alphabets from different languages this is where casefold is helpful
 # str.upper()
 # Returns a uppercase copy of the string.
+
+#Challenge*********************
+# write a small program to ask for a name and an age. When both values have been entered,
+# check if the person is the right age to go on on an 18-30 holiday.
+# They must be over 18 and under 31. If they are, welcome them to the holiday, otherwise print a,
+# message refusing them entry. Our programs expect valid input. a person of 18 years is considered over 18
+
+name = input("please enter your name ")
+if name:
+    age = int(input("please enter your age in numerics "))
+    if 18<=age<30:
+        print("congratulations {} you are eligible for holiday package".format(name))
+    else:
+        print("Sorry {} you aren't eligible for the pakage".format(name))
+else:
+    print("you havent entered your name the program is dismissed")
