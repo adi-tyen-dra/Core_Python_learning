@@ -51,7 +51,7 @@ print(separators)
 
 values = "".join(char if char not in separators else " " for char in num).split()
 print([int(val) for val in values]) 
-# the code above brings out the values separately removing all the puntuatuin marks
+# the code above brings out the values separately removing all the puntuatuin marks;
 
 #Backward slicing
 #note: forward slicing- start_index towards left of stop_index and step = +ve
