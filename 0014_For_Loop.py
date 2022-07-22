@@ -74,4 +74,27 @@ for i in range(1,13):
         print("{0:02} times {1:02} is {2:03} ".format(i,j,i*j))
 print("------------------------") #here in case2, line will be drawn only once at the very last
 
-# CONTINUE and BREAK keywords-
+# CONTINUE and BREAK statements-
+
+#Continue Statement
+
+shopping_list = ["milk","bread","sugar","spam","rice","blueberry"] #list
+#following two code prints everything except spam
+
+# for item in shopping_list:
+#     if item!="spam":
+#         print("buy"+item)
+
+for item in shopping_list:
+    if item == "spam":
+        continue
+    print("buy "+item)
+# continue statement simply skips the entire followed code of an iteration if encountered
+# continue statement is not a necessary statement in python and always have an alternative but can be used to increase readability
+
+# Break statement
+# it can be a useful component for searching code
+item_to_find = "spam"
+found_at = None # simply means that this var doesn't have a value yet
+#*****************************************************incomplete
+# break statement simply terminates the loop it is present in.
