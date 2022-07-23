@@ -75,9 +75,10 @@ else:
 #when a builtin func is available in an external module/package we must import it and use dot notation to use it in our program
 #it is suggested to import all modules and packages needed, in the beginning of code but python allows inbetween import aswell
 import random #importing a module named random
-answer = random.randint(1,10) #using randint func from random module, it produces random no. within the given inclusive range
+highest_limit = 10 #specified separately so that incase of change there is no need to change it at different places inside the code
+answer = random.randint(1,highest_limit) #using randint func from random module, it produces random no. within the given inclusive range
 print(answer) #TODO: delete after testing
-guess = int(input("please enter your guess "))
+guess = int(input("please enter your guess between 1 to {}".format(highest_limit))
 while guess != answer:
     if guess > answer:
         guess = int(input("please try lower "))
