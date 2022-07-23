@@ -96,5 +96,28 @@ for item in shopping_list:
 # it can be a useful component for searching code
 item_to_find = "spam"
 found_at = None # simply means that this var doesn't have a value yet
-#*****************************************************incomplete
-# break statement simply terminates the loop it is present in.
+for index in range(len(shopping_list)): #len func gives length of the list
+    if shopping_list[index] == item_to_find:
+        found_at = index
+        break    # break statement simply terminates the loop it is present in.
+print("spam was found at index position {}".format(found_at))
+
+#optimizing the same code incase item is not present in the list
+item_to_find = "hammer" #not in the list
+found_at = None # this time it can be used to optimise the code
+for index in range(len(shopping_list)): 
+    if shopping_list[index] == item_to_find:
+        found_at = index
+        break 
+if found_at is not None:
+    print("spam was found at index position {}".format(found_at))
+else:
+    print("could not find {} in the list".format(item_to_find))
+
+#optimizing the code without for loop
+if item_to_find in shopping_list:
+    found_at = shopping_list.index(item_to_find) #index func for a seq types returns the index of the particular element
+if found_at is not None:
+    print("spam was found at index position {}".format(found_at))
+else:
+    print("could not find {} in the list".format(item_to_find))
