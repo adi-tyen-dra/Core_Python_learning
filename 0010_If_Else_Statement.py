@@ -54,8 +54,7 @@ else:                           #checked only when both "if" and "elif" are fals
 
 #adding a second guess option
 ans = 5
-print("please enter a number between 1 to 10")
-guess = int(input())
+guess = int(input("please enter a number between 1 to 10"))
 if ans > guess:
     print("try guessin higher")
     if ans == guess:
@@ -66,3 +65,24 @@ elif ans < guess:
         print("you've guessed correctly")
 else:
     print("bravo you did it!")
+    
+# Challenge: Address the following two issues with the guessing game:
+# 1-> let the answer be random at every attempt
+# 2-> let their be infinite attempts insead of two until the user gussed the number
+
+#solution-
+
+#when a builtin func is available in an external module/package we must import it and use dot notation to use it in our program
+#it is suggested to import all modules and packages needed, in the beginning of code but python allows inbetween import aswell
+import random #importing a module named random
+answer = random.randint(1,10) #using randint func from random module, it produces random no. within the given inclusive range
+print(answer) #TODO: delete after testing
+guess = int(input("please enter your guess "))
+while guess != answer:
+    if guess > answer:
+        guess = int(input("please try lower "))
+    else:
+        guess = int(input("please try higher "))
+print("you've guessed it correct the no. was indeed {}".format(guess))
+
+#Note: the TODO comment is highlighted differently in intellij ide and helps the coder to keep a track of certain actions that might be needed in code
