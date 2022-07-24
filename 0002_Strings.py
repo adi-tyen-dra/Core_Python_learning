@@ -14,4 +14,5 @@ greet = 'sayonara'
 name = input('please enter your name - ')    # here input is evaluated first and its result is assigned to name var
 print(greet+
       ' '+
-      name)                                  # here greet and name are without "" as they are var instead of string, being used as arg for print func
+      name)                                  # here greet and name are without "" as they are var instead of string, 
+                                             #-being used as arg for print func
