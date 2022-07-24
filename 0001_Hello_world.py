@@ -1,8 +1,11 @@
 # print function prints value of argument passed to it
-print('Hello, World!')  # string literal
-print(1 + 2)   # calculation 
-print()   # no arg; a function name must always be followed by () even if no arg is provided
-print("the end","or is it",5+6)   # multiple arg at once
+
+print('Hello, World!')       # string literal
+print(1 + 2)                 # calculation 
+print()                      # no arg; a function name must always be followed by () even if no arg is provided
+print("the end",
+      "or is it",
+      5+6)                   # multiple arg at once
 
 # literal represents any kind of value 
 # string literal is a combination of characters available on the keyboard, enclosed by quotes
