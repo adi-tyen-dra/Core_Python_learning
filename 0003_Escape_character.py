@@ -2,10 +2,10 @@
 str1 = "this string is \nprinted in \nmore than\n one\nline"   # \n--> brings the cursor to new line
 print(str1)
 
-str2_1 = "12345678\t2345678\t345678\t4"   # \t--> brings a fixed whitespace between text
-str2_2 = "helloooo\thellooooo\th"    # \t provides fixed space between the first char of string and the string after it
-# -if the no. of char increases more than no. of spaces then space is counted from next char
-# -at position= old_char_position + space
+str2_1 = "12345678\t2345678\t345678\t4"  # \t--> brings a fixed whitespace between text
+str2_2 = "helloooo\thellooooo\th"  # \t provides fixed space between the first char of string 
+# -and the string after it if the no. of char increases more than no. of spaces then space is 
+# -counted from next char at position= old_char_position + space
 print(str2_1)
 print(str2_2)
 
@@ -19,7 +19,7 @@ print(str4)
 
 # using triple quotes to enclose string is a better alternative of above two cases
 # -it avoids escape char and improves readability of string
-str5 = """The pet shop owner said, "No, no 'e's uhm..., he's sleeping" """   # notice that no escape char is required
+str5 = """The pet shop owner said, "No, no 'e's uhm..., he's sleeping" """  # no escape char is required
 print(str5)
 
 str6 = """this
