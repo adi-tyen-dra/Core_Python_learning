@@ -136,4 +136,34 @@ if found_at is not None:
 else:
     print("could not find {} in the list"
           .format(item_to_find))
-    
+   
+# For Loop with Else
+
+# Note: this else statement is different from the else from if-else blocks.
+# here the else follows the for statement instead of an if statement
+
+numbers = [1, 25, 56, 76, 81]  # list with 8's multiple
+
+for number in numbers:
+    if number % 8 == 0:
+        print("we don't need these numbers")
+        break  # if multiple of 8 found then loop terminated
+
+# in above code, multiple of 8 is found and the loop is terminated with the print message
+# but incase the no multiple is found and loop runs throughout, this situation is ambiguous
+# inorder to provide a message only when the loop runs throughout we may use else s follows:
+
+numbers_2 = [1, 25, 55, 76, 81]  # list without 8's multiple
+
+for number in numbers:
+    if number % 8 == 0:
+        print("we don't need these numbers")
+        break # if multiple of 8 found then loop terminated
+else:
+    print("every thing worked fine")  # this code block executes only when the loop ran throughout
+
+# in above example, notice the indentation of else block is associated with for loop instead of if statement
+# as formerly stated, this else block only executes if the entire loop ran throughout. in any case if the loop
+# -is terminated before, this else statement won't be executed
+
+
