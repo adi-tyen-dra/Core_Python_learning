@@ -1,7 +1,8 @@
 # Binary search is the most efficient way possible to search for an item in an ordered collection of items.
 # it works on the principle of dividing the search collection into half and checking the mid-point 
 # -for the item each time it fails to search the item
-# eg- if a given no. is to be searched between a set of 1 to 1000 following would be the steps
+
+# eg- if a no. is to be searched between a set of 1 to 1000 following would be the steps similar to hi-low game
 # step0-> order the entire collection
 # step1-> check for mid point=> lower limit + ((higher limit - lower limit)//2) =>  1+((1000-1)//2)=500        
 # -so try 500, lets say the no. is greater
@@ -9,9 +10,9 @@
 # -so try 750, lets say the no. is smaller
 # step2-> this time we know that no.<750 so narrow the range, same formula      =>  501+((749-501))//2)=625    
 # -so try 625, and so on...
+
 # following this method the no. would be found in at most 10 guesses in above case.
 # no. of guess can be easily figured out, 2^10 = 1024 so in a range of 1023 no. at most 10 guesses are needed
-
 
 low = 1
 high = 1000
@@ -90,7 +91,7 @@ while low != high:
     else:
         print("please enter h, l or c")
     guesses += 1
-else:  # executes if the loop runs throughout and naturally terminates when low=high=guess
+else:  # executes if the loop runs throughout and naturally terminates when low=high
     print("we've guessed it, the no. is {}"
           .format(low))
     print("thank you, it took us {} attempts to figure out"
