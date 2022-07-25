@@ -37,32 +37,62 @@ while True:
         print('please enter h, l or c')
         guesses += 1
 
-    # adding the functional unit to the above code in place of comments and removing pass
+# adding the functional unit to the above code in place of comments and removing pass
 
-    low = 1
-    high = 1000
-    print("please think of a no. between {} and {}"
-          .format(high, low))
-    input("please hit enter")
-    guesses = 1
-    while True:
-        print("\tguessing in the range of {1} and {0}"
-              .format(high, low))  # prints out the ranges that narrows down using binary search
-        guess = low + (high-low)//2
-        hi_lo = input("my guess is {} should i guess high or low"
-                      "enter either h, l or c respectively"
-                      .format(guess)).casefold()
-        if hi_lo == "h":
-            # guess higher, lower limit = current guess +1
-            low = guess + 1
-        elif hi_lo == "l":
-            # guess lower, higher limit = current guess -1
-            high = guess - 1
-        elif hi_lo == "c":
-            print("thank you, it took us {} attempts to figure out"
-                  .format(guesses))
-            break
-        else:
-            print("please enter h, l or c")
-        guesses += 1
+low = 1
+high = 1000
+print("please think of a no. between {} and {}"
+      .format(high, low))
+input("please hit enter")
+guesses = 1
+while True:
+    print("\tguessing in the range of {1} and {0}"
+          .format(high, low))  # prints out the ranges that narrows down using binary search
+    guess = low + (high-low)//2
+    hi_lo = input("my guess is {} should i guess high or low"
+                  "enter either h, l or c respectively"
+                  .format(guess)).casefold()
+    if hi_lo == "h":
+        # guess higher, lower limit = current guess +1
+        low = guess + 1
+    elif hi_lo == "l":
+        # guess lower, higher limit = current guess -1
+        high = guess - 1
+    elif hi_lo == "c":
+        print("thank you, it took us {} attempts to figure out"
+              .format(guesses))
+        break
+    else:
+        print("please enter h, l or c")
+    guesses += 1
+     
+# adding else block to while loop for increaing code efficiency
 
+low = 1
+high = 1000
+print("please think of a no. between {} and {}"
+      .format(high, low))
+input("please hit enter")
+guesses = 1
+while low != high:
+    guess = low + (high-low)//2
+    hi_lo = input("my guess is {} should i guess high or low"
+                  "enter either h, l or c respectively"
+                  .format(guess)).casefold()
+    if hi_lo == "h":
+        low = guess + 1
+    elif hi_lo == "l":
+        high = guess - 1
+    elif hi_lo == "c":
+        print("thank you, it took us {} attempts to figure out"
+              .format(guesses))
+        break
+    else:
+        print("please enter h, l or c")
+    guesses += 1
+else:  # executes if the loop runs throughout and naturally terminates when low=high=guess
+    print("we've guessed it, the no. is {}"
+          .format(low))
+    print("thank you, it took us {} attempts to figure out"
+          .format(guesses))
+    
