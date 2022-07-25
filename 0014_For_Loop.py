@@ -150,8 +150,8 @@ for number in numbers:
         break  # if multiple of 8 found then loop terminated
 
 # in above code, multiple of 8 is found and the loop is terminated with the print message
-# but incase the no multiple is found and loop runs throughout, this situation is ambiguous
-# inorder to provide a message only when the loop runs throughout we may use else s follows:
+# but incase no multiple is found and loop runs throughout, this situation is ambiguous 
+# inorder to provide a message only when the loop runs throughout we may use else as follows:
 
 numbers_2 = [1, 25, 55, 76, 81]  # list without 8's multiple
 
@@ -163,7 +163,5 @@ else:
     print("every thing worked fine")  # this code block executes only when the loop ran throughout
 
 # in above example, notice the indentation of else block is associated with for loop instead of if statement
-# as formerly stated, this else block only executes if the entire loop ran throughout. in any case if the loop
-# -is terminated before, this else statement won't be executed
-
-
+# as formerly stated, this else block only executes if the entire loop ran throughout, if the loop
+# -is terminated before due to any probable cause, this else statement won't be executed
