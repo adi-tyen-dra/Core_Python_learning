@@ -1,7 +1,8 @@
 # instead of running the code, call for a debugger (wrt intellij IDE)
 # debug pane is opened insted of run pane and program runs usually
 
-# Break points-
+# BREAK POINTS
+
 # #created and removed by clicking on the left number margin beside the target line
 # #once created, stops the program to function beyond that line while debugging, allows us to take action
 
