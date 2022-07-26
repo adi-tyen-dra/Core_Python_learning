@@ -1,9 +1,12 @@
-# True and False
+# TRUE AND FALSE
+
 day = "saturday"
 temperature = 30
 raining = False  # assign values first then use in expression else error
 
-# precedence of conditional operator- not>>and>>or
+# PRECEDENCE OF CONDITIONAL OPERATORS
+
+# not>>and>>or
 
 if day == "saturday" and temperature > 27 or not raining:  # (day == "saturday" and temperature > 27) or (not raining)
     # because of precedence
@@ -11,7 +14,8 @@ if day == "saturday" and temperature > 27 or not raining:  # (day == "saturday" 
 else:
     print("go in")
 
-# truthy values-
+# TRUTHY VALUES
+
 if 0:  # 0 of any kind is evaluated as false hence else will be executed
     print("hehe")  # underlined cuz its unreachable code
 else:
@@ -24,7 +28,7 @@ if name:  # an empty var will be evaluated as false but if val is there then tru
 else:
     print("hi man don't you have a name")
 
-# Usage of in-
+# USAGE OF 'IN'
 parrot = "norwegian blue"
 check = input("enter a char or a str to check in parrot ")
 if check in parrot:  # case sensitive
@@ -35,7 +39,8 @@ else:
           .format(parrot, check))
 print()
 
-# usage of not in-
+# USAGE OF 'NOT IN'
+
 activity = input("what would you like to do today")
 if "cinema" not in activity.casefold():  # case fold avoids case-sensitive issues turning entire string to lower case
     print("but i wish to go to cinema")
