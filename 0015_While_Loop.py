@@ -96,3 +96,37 @@ while chosen_exit not in directions:
 else:
     print("you came out of it")  #only prints the message if loop terminates normaly
    
+# CHALLENGE
+# write a program to print a number of options, and allow the user to select an
+# -option from the list. The options should be numbered from 1 to 9, although you can use less than nine options too.
+# -Make sure that there are at least four options with zero to exit the program. So the program should continue looping,
+# -allowing the user to choose one of the options each time, and the loop should terminate when the user chooses zero.
+# -If the user makes a valid choice, the program should print a short message and the message should include
+# -the value that they typed. Don't print a different message for each choice.
+# -The only thing that should change is the number they typed.
+# -Although you could print out the description, Now if their choice isn't one of the options in the menu,
+# -nothing should be printed (although you can still see their input on the screen). As an optional extra,
+# -modify the program so that the menu is printed again,
+# -If they choose an invalid option.
+# -Be careful with that one.
+# -You may start off by duplicating the code to print the menu, but it's possible to write the program without
+# -duplicating the print lines.
+
+# my solution
+choice = None
+while choice not in range(0, 5):
+    choice = int(input("please choose one of the following options by no.\n"
+                       "1.learn python\n"
+                       "2.learn dsa\n"
+                       "3.learn data science\n"
+                       "4.learn dbms\n"
+                       "5.learn ml\n"
+                       "6.learn ai\n"
+                       "0. exit\n"))
+    while choice in range(0, 7):
+        if choice == 0:
+            print("the program is terminated")
+            break
+        print("you have selected {} as your choice"
+              .format(choice))
+        choice = int(input("please enter your next choice"))
