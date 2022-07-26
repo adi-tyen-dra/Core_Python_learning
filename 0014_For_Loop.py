@@ -1,3 +1,7 @@
+# LOOPS
+
+#FOR LOOPS
+
 # A for loop works by iterating over some set of values. 
 # It assigns each of the values, one by one, to one or more variables. 
 # It then executes a block of code once for each value.
@@ -32,7 +36,8 @@ print(sum([int(val) for val in values]))  # edited to return sum
 # in python the approach is much more flexible although similar effect from those lang can be achieved by
 # -iterating a loop over a range in python.
 
-# Ranges:
+# RANGES
+
 # ranges with for loop-
 
 for i in range(1, 12):  # similar to slicing it doesn't iterate for the 12th time(end val) 
@@ -45,7 +50,7 @@ for i in range(10, 0, -2):  # similar to slicing it has step values as well
 for i in range(10):  # will take 0 as the default start value and run ten times
     print(i)  # prints no.  0 to 9
 
-# MINI Challenge
+# MINI CHALLENGE
 # write the prog to print all no. from 0 to 100, divisible by 7, (without using if)
 
 # sol1
@@ -55,7 +60,8 @@ for i in range(0, 101, 7):
 for i in range(101)[::7]:  # it uses slicing
     print(i)
 
-# Nested for loop-
+# NESTED FOR LOOP
+
 for i in range(1, 13):  # 'i' is not defined outside this loop
     for j in range(1, 13):  # j is not defined outside this loop
         print("{0:02} times {1:02} is {2:03} "
@@ -79,7 +85,7 @@ for i in range(1, 13):
               .format(i, j, i*j))
 print("------------------------")  # here in case2, line will be drawn only once at the very last
 
-# CONTINUE and BREAK statements-
+# CONTINUE AND BREAK STATEMENTS
 
 # Continue Statement
 
@@ -137,7 +143,7 @@ else:
     print("could not find {} in the list"
           .format(item_to_find))
    
-# For Loop with Else
+# FOR LOOP WITH ELSE BLOCK
 
 # Note: this else statement is different from the else from if-else blocks.
 # here the else follows the for statement instead of an if statement
