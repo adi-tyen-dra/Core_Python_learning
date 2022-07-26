@@ -1,3 +1,5 @@
+# BINARY SEARCH
+
 # Binary search is the most efficient way possible to search for an item in an ordered collection of items.
 # it works on the principle of dividing the search collection into half and checking the mid-point 
 # -for the item each time it fails to search the item
