@@ -9,7 +9,8 @@
 # most of the pep8 rules have been followed while making these files though 
 # -we must refer to the original document for valuable insights
 
-# Refactoring:
+# REFACTORING
+
 # it's a process of optimising the structure of the code (might be to comply with pep8)
 # -without affecting its functionality.
 # certain IDEs, including intellij, provide features to facilitate this process.
