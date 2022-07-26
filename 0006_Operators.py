@@ -1,3 +1,4 @@
+# Operators
 a = 12
 b = 3
 
@@ -25,7 +26,7 @@ print(i)
 i = 3
 print(i)
 
-# Operator precedence
+# Operator precedence----------------------------------------------------------
 
 print(a+b/3-4*12)  # ans=-35 this is because python follows mathematical format to solve arithmetic expressions
 print((a+(b/3))-(4*12))  # the expression is equivalent to the upper one
