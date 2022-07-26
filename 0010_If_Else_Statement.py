@@ -1,6 +1,6 @@
 import random  # importing a module named random for the guessing game
 
-# flow of program and decision-making
+# Flow of the Program and Decision Making
 name = input("what is your name? ")
 
 age = input("how old are you {}? "
