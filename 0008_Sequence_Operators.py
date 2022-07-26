@@ -11,7 +11,9 @@ lis1 = ["computer", "monitor", "keyboard", "mouse"]  # is a collection of 4 item
 print(lis1[1][::3])  # will produce "mir" as 1 of lis1 = monitor then [::3] of monitor string gives "mir"
 
 # conclusion: the operators discussed will be applicable to all the sequence types, 
-# -exception: concatenation is not applicable to all sequence types
+# exception: concatenation is not applicable to all sequence types
+
+# CONCATENATION AND MULTIPLICATION
 
 # concatenation and multiplication aren't applicable on ranges
 
@@ -36,14 +38,15 @@ print("hello "*5+"4")  # here we replaced int 4 with str 4 so 4 becomes the part
 print("hello "*(5+4))  # operator precedence here 5+4 will be evaluated first 
 # -and the result will be multiplied to the str
 
-# Subset verification
+# SUBSET VERIFICATION 
 
 print("he" in string1)  # true
 print("er" in string2)  # true
 print("us" in string3)  # false
 print("hmm" in "zmmmhummkumdum")  # false
 
-# String replacement fields
+# STRING REPLACEMENT FIELDS
+
 # to use or display str value alongside int we can use this method
 
 age = 24
