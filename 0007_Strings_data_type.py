@@ -1,6 +1,6 @@
 # Note: Square brackets are used for 4 reasons in python, indexing, slicing,list,
 
-# indexing and negative indexing---------------------------------------------------
+# INDEXING AND NEGATIVE INDEXING
 
 parrot = "Norwegian Blue"
 print(parrot)
@@ -42,13 +42,14 @@ print(parrot +
 
 # negative index of a char = (length of the string) - (char's positive index)
 
-# Slicing------------------------------------------------------------------------
+# SLICING
 
 # slicing comprises start, stop and a step value 
 # slicing without step value => string[start_index:stop_index]
 # Note: the char where the slicing stops isn't included in the end result
 
-# Slicing with positive index.
+# SLICING WITH POSITIVE INDEX
+
 a = "hello there, how are you?"
 print(a[0:3])  # start=0; stop=3 so, "ans = hel"
 print(a[5:7])  # here start = 5 and stop = 7 so "ans = <blank>t"
@@ -63,7 +64,7 @@ print(a[n:] +
 print(a[2:4] + 
       a[7:9])  # ll+he = 'llhe'
 
-# Slicing with negative index.
+# SLICING WITH NEGATIVE INDEX
 
 abc = "abcdefghijklmnopqrstuvwxyz"
 print(abc[-4:-1])  # ans= wxy
@@ -71,7 +72,7 @@ print(abc[-4:25])  # ans= wxy
 print(abc[-4:21])  # ans= <nothing>, occurs irrespective of the positive or negative index, 
 # cuz the stop index lies leftwards w.r.t the start index 
 
-# Slicing with step value => string[start_index:stop_index:steps]
+# SLICING WITH STEP VALUE => string[start_index:stop_index:steps]
 
 print(abc[0:10:3])  # ans = 'adgj' here 3 becomes the step so every third char is printed within start and stop
 # default step is 1
@@ -86,7 +87,8 @@ values = "".join(char if char not in separators else " " for char in num).split(
 print([int(val) for val in values])
 # the code above brings out the values separately removing all the punctuation marks;
 
-# Backward slicing
+# BACKWARD SLICING
+
 # note: forward slicing- start_index towards left of stop_index and step = +ve
 # note: back slicing- start_index towards left of stop_index and step = -ve
 backwards = abc[25:0:-1]  # all the alphabets will be printed backwards due to neg step value, 
