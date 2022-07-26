@@ -1,3 +1,5 @@
+# WHILE LOOPS
+
 # the basic form is 
 # while <condition>: 
 #     execute block of code.
@@ -37,7 +39,7 @@ print("you came out of it")
 # we don't know the amount of data that is to be read from a source 
 # -this is where while loop can help and terminate itself as soon as the data input ends
 
-# BREAK in while loop
+# BREAK IN WHILE LOOP
 
 directions = ["north",
               "south",
@@ -51,7 +53,7 @@ while chosen_exit not in directions:
         break
 print("you came out of it")
 
-# break challenge---
+# MINI CHALLENGE
 # Modify the code inside this loop to stop when 'i' is greater than zero and exactly divisible by 11
 # code
 # for i in range(0, 100, 7):
@@ -63,7 +65,7 @@ for i in range(0, 100, 7):
     if i > 0 and i % 11 == 0:
         break
 
-# continue challenge---
+# CONTINUE CHALLENGE
 # print no. 0 to 20 not divisible by 3 or 5
 # sol with continue
 for i in range(0, 20):
@@ -75,7 +77,8 @@ for i in range(0, 20):
     if i % 3 != 0 and i % 5 != 0:
         print(i)
 
-# while loop with else block
+# WHILE LOOP WITH ELSE BLOCK
+
 # notice that the direction adventure game above prints the end message 
 # -even when the user comes out of the loop by quitting that not needed
 # -now that can be fixed using the loop-else block
