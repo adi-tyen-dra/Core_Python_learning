@@ -1,4 +1,5 @@
-# conditional operators
+# CONDITIONAL OPERATORS
+
 # > greater than
 # < less than
 # >= greater than or equal to
@@ -6,7 +7,7 @@
 # != not equal to
 # == equal to
 
-# older code from guessing game with two attempts
+# guessing game with two attempts
 ans = 5
 print("please enter a number between 1 to 10")
 guess = int(input())
@@ -35,7 +36,8 @@ if ans != guess:  # this line
 else:
     print("bravo you got it in the first go")
 
-# challenge-> change "this line" to "if ans == guess:" and make appropriate changes to the program to get same output
+# MINI CHALLENGE
+# change "this line" to "if ans == guess:" and make appropriate changes to the program to get same output
 
 # my solution
 if ans == guess:
@@ -51,7 +53,8 @@ else:
     else:
         print("sorry you didn't make it")
 
-# and, and or conditionals
+# 'AND' AND 'OR' CONDITIONALS
+
 # AND gives true for a pair of conditions only if both are true else false
 # OR gives true for a pair of conditions if at least one of the condition is true else false
 # note: python stops checking condition in:
