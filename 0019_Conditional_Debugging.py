@@ -1,4 +1,5 @@
-# Conditional debugging (with reference to IntelliJ ide)
+# CONDITIONAL DEBUGGING (with reference to IntelliJ ide)
+
 # above is a debugging feature where conditions can be attached to the created breakpoints
 # the feature is available in most IDEs in some forms though missing in IDLE
 # Steps:
