@@ -1,3 +1,5 @@
+# STRING REPLACEMENT FIELD: FORMATTING
+
 for i in range(1, 13):   # a loop from 1 to 12
     print("No. {0:2} squared = {1:3} and cubed = {2:4}"
           .format(i, i**2, i**3))
@@ -63,13 +65,15 @@ for i in range(1, 13):  # a loop from 1 to 12
     print("No. {} squared = {} and cubed = {:4}"
           .format(i, i**2, i**3))
 
-# f-string, another way of formatting; follows the same rules as normal formatting but with a minor change in syntax
+# STRING REPLACEMENT FIELD: F STRINGS
+# another way of formatting; follows the same rules as normal formatting but with a minor change in syntax
 
 print(f"pi is approximately {22/7:20.16f}")
 pi = 22/7
 print(f"pi is approximately {pi:30.28f}")
 
-# interpolation from python 2 might be removed from newer versions; its use in python 3 is not recommended
+# STRING REPLACEMENT FIELD: INTERPOLATION (PYTHON 2)
+# might be removed from newer versions; its use in python 3 is not recommended
 age = 20
 major = "years"
 print("my age is %d %s and %d %s" % (age, major, 6, "months"))
