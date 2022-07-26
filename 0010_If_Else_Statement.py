@@ -1,6 +1,7 @@
 import random  # importing a module named random for the guessing game
 
-# Flow of the Program and Decision Making
+# FLOW OF PROGRAM AND DECISION MAKING
+
 name = input("what is your name? ")
 
 age = input("how old are you {}? "
@@ -13,7 +14,8 @@ age = int(input("how old are you {}? "
 print("he says he's {} years old now"
       .format(age))  # here the age is int 
 
-# IF-ELSE Statement-
+# IF-ELSE STATEMENT
+
 # to check their authority to vote; 
 if age >= 18:
     print("you are old enough to vote")
@@ -30,7 +32,9 @@ else:
     print("you are old enough to vote")
     print("please put an X in the box")
 
-# ELIF- ELSE-IF Statement, order of the statement does matter here
+# ELIF (ELSE-IF) STATEMENT
+
+# order of the statement does matter here
 
 if age < 18:
     print("you aren't old enough to vote, please come back in {} years ".format(18-age))
@@ -72,7 +76,8 @@ elif ans < guess:
 else:
     print("bravo you did it!")
 
-# Challenge: Address the following two issues with the guessing game from if-else file:
+# MINI Challenge: 
+# Address the following two issues with the guessing game from if-else file:
 # 1-> let the answer be random at every attempt
 # 2-> let their be infinite attempts instead of two until the user guessed the number
 # 3-> provide an exit option if the user enters 0
