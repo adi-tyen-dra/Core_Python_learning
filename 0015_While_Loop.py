@@ -74,3 +74,22 @@ for i in range(0, 20):
 for i in range(0, 20):
     if i % 3 != 0 and i % 5 != 0:
         print(i)
+
+# while loop with else block
+# notice that the direction adventure game above prints the end message 
+# -even when the user comes out of the loop by quitting that not needed
+# -now that can be fixed using the loop-else block
+
+directions = ["north",
+              "south",
+              "east",
+              "west"]
+chosen_exit = ""
+while chosen_exit not in directions:
+    chosen_exit = input("please choose a valid direction")
+    if chosen_exit.casefold() == "quit":
+        print("game over")
+        break
+else:
+    print("you came out of it")  #only prints the message if loop terminates normaly
+   
