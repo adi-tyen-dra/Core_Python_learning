@@ -1,6 +1,6 @@
-# extra: Square brackets are used for 4 reasons in python, indexing, slicing,,
+# Note: Square brackets are used for 4 reasons in python, indexing, slicing,list,
 
-# indexing and negative indexing-
+# indexing and negative indexing---------------------------------------------------
 
 parrot = "Norwegian Blue"
 print(parrot)
@@ -42,7 +42,7 @@ print(parrot +
 
 # negative index of a char = (length of the string) - (char's positive index)
 
-# Slicing
+# Slicing------------------------------------------------------------------------
 
 # slicing comprises start, stop and a step value 
 # slicing without step value => string[start_index:stop_index]
