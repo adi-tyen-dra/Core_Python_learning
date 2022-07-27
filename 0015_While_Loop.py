@@ -113,20 +113,39 @@ else:
 # -duplicating the print lines.
 
 # my solution
-choice = None
-while choice not in range(0, 5):
+choice = None  # no initialization problem; helps to enter the first loop 
+while choice not in range(0, 6):  # loop1, choice not in valid range
     choice = int(input("please choose one of the following options by no.\n"
-                       "1.learn python\n"
-                       "2.learn dsa\n"
-                       "3.learn data science\n"
-                       "4.learn dbms\n"
-                       "5.learn ml\n"
-                       "6.learn ai\n"
-                       "0. exit\n"))
-    while choice in range(0, 7):
-        if choice == 0:
+                       "1.\tlearn python\n"
+                       "2.\tlearn dsa\n"
+                       "3.\tlearn data science\n"
+                       "4.\tlearn dbms\n"
+                       "5.\tlearn ml\n"
+                       "0.\texit\n"))
+    while choice in range(0, 6):  # loop2, choice in valid range
+        if choice == 0:  # if executed, it brings us out of both loop 
+            # first loop is terminated due to break statement
+            # second loop is terminated because choice == 0 doesn't satisfy first loop's condition
             print("the program is terminated")
             break
-        print("you have selected {} as your choice"
+        print("you have selected {} as your choice"  # for valid range other than 0, next choice is asked for
               .format(choice))
-        choice = int(input("please enter your next choice"))
+        choice = int(input("please enter your next choice"))  # if choice within valid range, loop2 repeats
+        # if choice not in valid range, loop2 breaks and execution returns to loop1 again asking for choice with menu
+        
+# provided solution
+
+choice = None  
+while choice != "0": 
+    if choice in "12345":
+        print("you chose {}"
+              .format(choice))
+    else:
+        print("please choose one of the following options by no.\n"
+              "1.\tlearn python\n"
+              "2.\tlearn dsa\n"
+              "3.\tlearn data science\n"
+              "4.\tlearn dbms\n"
+              "5.\tlearn ml\n"
+              "0.\texit\n")
+        choice = input()
