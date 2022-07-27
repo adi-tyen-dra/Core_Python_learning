@@ -1,5 +1,7 @@
 # python 3 has five sequence types:
 # strings, lists, tuple, range, bytes & bytearray
+# all sequence types are iterable but all iterables are not sequence types.
+# iterables are the ones we can iterate over or use for loop over in simple terms.
 # sequence is defined to be the ordered set of items
 # eg- string- 
 str1 = "hello World!"  # is a collection of 12 items each of which are chars.
