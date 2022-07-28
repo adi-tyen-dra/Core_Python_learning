@@ -106,3 +106,34 @@ print(id(computer_parts))  # identity remains the same
 # An immutable object can't be changed. You can create a new object,
 # -and use the same variable name for it, but you can't change the value of an immutable object.
 # Mutable objects, such as lists, can be changed.
+
+# BINDING MULTIPLE NAMES TO A LIST
+
+shopping_list =["veggies",
+                "milk",
+                "fruits"
+                ]
+
+a = b = c = d = e = shopping_list 
+
+# adding an item to b with append func
+b.append("cream")
+print(a)
+print(c)
+print(d)
+print(e)
+print(shopping_list)  # all will produce the same edited result
+
+# COMMON SEQUENCE OPERATIONS (applicable to all sequence types)
+
+even = [2, 4, 6, 8]
+odd = [1, 3, 5, 7, 9]
+
+print(min(even))  # min returns the minimum value of the sequence
+print(min(odd))
+print(max(odd))  # max produces the maximum value of the sequence
+print(max(even))
+
+# in case of string the greatest ascii value char would be returned
+g = "9zAZw"
+print(max(g))
