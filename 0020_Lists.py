@@ -123,4 +123,73 @@ print(d)
 print(e)
 print(shopping_list)  # all will produce the same edited result
 
+# COMMON SEQUENCE OPERATIONS (applicable to all sequence types)
+
+even = [2, 4, 6, 8]
+odd = [1, 3, 5, 7, 9.5]
+
+print(min(even))  # min returns the minimum value of the sequence
+print(min(odd))
+print(max(odd))  # max produces the maximum value of the sequence
+print(max(even))
+# above won't work for a combination of str and int
+
+print()
+# Note: in case of string/char comparison, char wise ascii value is checked for
+g = ["9z", "z", "zw", "Z", "w"]
+print(max(g))
+
+print()
+# len func returns the length of the sequence
+print(len(even))
+print(len(odd))
+
+print()
+# count func returns the count of a provided argument in the sequence
+my_list = ["milk", 'milky', 'milk', 'bulky']
+print(my_list.count("milk"))  # used to check entire items
+# in case of string
+print("mississippi".count("iss"))
+
+# COMMON OPERATIONS ON MUTABLE
+
+# Note: A function is a block of organized, reusable code that is used to perform a single, related action.
+# A method is also the same except it is bound to an object and called upon it.
+# -i.e. without an object a method can't be called.
+# basic structure of function: function_name(arguments if any)
+# basic structure of method: object_name.method_name(argument if any)
+
+# APPENDING AN ITEM TO THE LIST
+
+# adding a computer part to buying list
+
+choice = "-"  # anything other than valid option; can't use None type here
+buying_list = []  # empty list
+while choice != "0":
+    if choice in "123456":
+        print("adding the {} item to your buying list"
+              .format(choice))
+        if choice == "1":
+            buying_list.append("printer")
+        elif choice == "2":
+            buying_list.append("mouse")
+        elif choice == "3":
+            buying_list.append("keyboard")
+        elif choice == "4":
+            buying_list.append("cpu")
+        elif choice == "5":
+            buying_list.append("monitor")
+        elif choice == "6":
+            buying_list.append("HDMI cable")
+    else:
+        print("please add an option from the following list: \n"
+              "1: printer\n"
+              "2: mouse\n"
+              "3: keyboard\n"
+              "4: cpu\n"
+              "5: monitor\n"
+              "6: HDMI cable\n"
+              "0: to finish\n")
+    choice = input()
+print(buying_list)
 
