@@ -116,8 +116,7 @@ shopping_list =["veggies",
 
 a = b = c = d = e = shopping_list 
 
-# adding an item to b with append func
-b.append("cream")
+b.append("cream")  # adding an item to b with append method called upon object b with dot notation.
 print(a)
 print(c)
 print(d)
