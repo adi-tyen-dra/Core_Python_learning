@@ -124,16 +124,4 @@ print(d)
 print(e)
 print(shopping_list)  # all will produce the same edited result
 
-# COMMON SEQUENCE OPERATIONS (applicable to all sequence types)
 
-even = [2, 4, 6, 8]
-odd = [1, 3, 5, 7, 9]
-
-print(min(even))  # min returns the minimum value of the sequence
-print(min(odd))
-print(max(odd))  # max produces the maximum value of the sequence
-print(max(even))
-
-# in case of string the greatest ascii value char would be returned
-g = "9zAZw"
-print(max(g))
