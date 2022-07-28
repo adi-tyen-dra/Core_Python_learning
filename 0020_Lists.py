@@ -193,3 +193,40 @@ while choice != "0":
     choice = input()
 print(buying_list)
 
+# ITERATING OVER A LIST
+
+# optimising the previous example with loop over list
+available_list =["1: printer",
+                 "2: mouse",
+                 "3: keyboard",
+                 "4: cpu",
+                 "5: monitor",
+                 "6: HDMI cable",
+                 "0: to finish",
+                 ]
+choice = "-"
+buying_list = []
+while choice != "0":
+    if choice in "123456":
+        print("adding the {} item to your buying list"
+              .format(choice))
+        if choice == "1":
+            buying_list.append("printer")
+        elif choice == "2":
+            buying_list.append("mouse")
+        elif choice == "3":
+            buying_list.append("keyboard")
+        elif choice == "4":
+            buying_list.append("cpu")
+        elif choice == "5":
+            buying_list.append("monitor")
+        elif choice == "6":
+            buying_list.append("HDMI cable")
+    else:
+        print("please add an option from the following list: \n")
+        for part in available_list:  # loop over the list
+            print("{0}: {1}"
+                  .format(available_list.index(part), part))  # not very efficient
+            # the index method has to search the entire list for index each time
+    choice = input()
+print(buying_list)
