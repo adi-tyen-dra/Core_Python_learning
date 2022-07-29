@@ -15,7 +15,6 @@ print(computer_parts[2])
 print(computer_parts[-1])  # -ve index
 # slicing over a list
 print(computer_parts[2:4])
-
 # Note: above func seem to run same both for str type and list type
 # -but one fundamental difference between the two is, list are mutable and strings are immutable
 # -i.e- contents of string can not be changed once fixed but can be changed in case of lists
@@ -26,9 +25,7 @@ shopping_list =["veggies",
                 "milk",
                 "fruits"
                 ]
-
 a = b = c = d = e = shopping_list 
-
 b.append("cream")  # adding an item to b with append method called upon object b with dot notation.
 print(a)
 print(c)
@@ -40,23 +37,19 @@ print(shopping_list)  # all will produce the same edited result
 
 even = [2, 4, 6, 8]
 odd = [1, 3, 5, 7, 9.5]
-
 print(min(even))  # min returns the minimum value of the sequence
 print(min(odd))
 print(max(odd))  # max produces the maximum value of the sequence
 print(max(even))
 # above won't work for a combination of str and int
-
 print()
 # Note: in case of string/char comparison, char wise ascii value is checked for
 g = ["9z", "z", "zw", "Z", "w"]
 print(max(g))
-
 print()
 # len func returns the length of the sequence
 print(len(even))
 print(len(odd))
-
 print()
 # count func returns the count of a provided argument in the sequence
 my_list = ["milk", 'milky', 'milk', 'bulky']
@@ -75,7 +68,6 @@ print("mississippi".count("iss"))
 # APPENDING AN ITEM TO THE LIST
 
 # adding a computer parts to the buying list
-
 choice = "-"  # anything other than valid option
 # we can't use None type here
 buying_list = []  # empty list
@@ -110,7 +102,6 @@ print(buying_list)
 # ITERATING OVER A LIST
 
 # optimising the previous example with loop over list along with some other changes
-
 available_list = ["printer",
                   "mouse",
                   "keyboard",
@@ -190,8 +181,7 @@ for index, character in enumerate("abcdefghij"):
 # Our customer would like two separate lists. One, called flowers, will contain only flowers, and
 # the other, called shrubs, must contain only shrubs.
 # Write code to populate the two lists with the appropriate plants from data.
-
-# question code
+# question code:
 data = [
     "Andromeda - Shrub",
     "Bellflower - Flower",
@@ -205,7 +195,6 @@ data = [
 ]
 flowers = []
 shrubs = []
-
 # my solution & given solution
 for datas in data:
     if "Shrub" in datas:
@@ -216,4 +205,40 @@ print(shrubs)
 print(flowers)
 
 # REMOVING ITEMS FROM A LIST
+
+available_list = ["printer",
+                  "mouse",
+                  "keyboard",
+                  "cpu",
+                  "monitor",
+                  "HDMI cable",
+                  "to finish",
+                  ]
+valid_choices = []
+for i in range(1, len(available_list) + 1):
+    valid_choices.append(str(i))
+choice = "-"
+buying_list = []
+while choice != "0":
+    if choice in valid_choices:
+        index = choice - 1
+        part = available_list[index]
+        if choice in buying_list:  # for removing item click its position again after adding it to list
+            print("removing the {} item to your buying list"
+                  .format(choice))
+            buying_list.remove(part)  # remove func, removes the item from list and returns error if item not in list
+        else:
+            print("adding the {} item to your buying list"
+                  .format(choice))
+            buying_list.append(part)
+    else:
+        print("please add an option from the following list: \n")
+        for num, part in enumerate(available_list):
+            print("{0}: {1}"
+                  .format(num + 1, part))
+    choice = input()
+print(buying_list)
+
+# SORTING THE LIST
+
 
