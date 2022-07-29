@@ -195,33 +195,29 @@ print(buying_list)
 
 # ITERATING OVER A LIST
 
-# optimising the previous example with loop over list
-available_list =["1: printer",
-                 "2: mouse",
-                 "3: keyboard",
-                 "4: cpu",
-                 "5: monitor",
-                 "6: HDMI cable",
-                 "0: to finish",
-                 ]
+# optimising the previous example with loop over list along with other changes
+
+available_list = ["printer",
+                  "mouse",
+                  "keyboard",
+                  "cpu",
+                  "monitor",
+                  "HDMI cable",
+                  ]
+# valid_choices = [str(i) for i in range(1, len(available_list) + 1)]
+# -discussed later, above is the optimal way to define valid_choice
+valid_choices = []
+for i in range(1, len(available_list) + 1):
+    valid_choices.append(str(i))  # creates a list of numeric valid choices
 choice = "-"
 buying_list = []
 while choice != "0":
-    if choice in "123456":
+    if choice in valid_choices:
         print("adding the {} item to your buying list"
               .format(choice))
-        if choice == "1":
-            buying_list.append("printer")
-        elif choice == "2":
-            buying_list.append("mouse")
-        elif choice == "3":
-            buying_list.append("keyboard")
-        elif choice == "4":
-            buying_list.append("cpu")
-        elif choice == "5":
-            buying_list.append("monitor")
-        elif choice == "6":
-            buying_list.append("HDMI cable")
+        index = int(choice) - 1
+        part = available_list[index]
+        buying_list.append(part)
     else:
         print("please add an option from the following list: \n")
         for part in available_list:  # loop over the list
@@ -240,32 +236,26 @@ print(buying_list)
 # -which specifies the number we want the count to start at (the default is 0).
 
 # further optimization of earlier code using enumerate function
-available_list = ["1: printer",
-                  "2: mouse",
-                  "3: keyboard",
-                  "4: cpu",
-                  "5: monitor",
-                  "6: HDMI cable",
-                  "0: to finish",
+available_list = ["printer",
+                  "mouse",
+                  "keyboard",
+                  "cpu",
+                  "monitor",
+                  "HDMI cable",
+                  "to finish",
                   ]
+valid_choices = []
+for i in range(1, len(available_list) + 1):
+    valid_choices.append(str(i))
 choice = "-"
 buying_list = []
 while choice != "0":
-    if choice in "123456":
+    if choice in valid_choices:
         print("adding the {} item to your buying list"
               .format(choice))
-        if choice == "1":
-            buying_list.append("printer")
-        elif choice == "2":
-            buying_list.append("mouse")
-        elif choice == "3":
-            buying_list.append("keyboard")
-        elif choice == "4":
-            buying_list.append("cpu")
-        elif choice == "5":
-            buying_list.append("monitor")
-        elif choice == "6":
-            buying_list.append("HDMI cable")
+        index = choice - 1
+        part = available_list[index]
+        buying_list.append(part)
     else:
         print("please add an option from the following list: \n")
         for num, part in enumerate(available_list):  # example of for loop with multile var iteration
@@ -275,3 +265,8 @@ while choice != "0":
             # the track of index is alredy kept and we don't need to search the entire list 
     choice = input()
 print(buying_list)
+
+# another enumerate example
+for index, character in enumerate("abcdefghij"):
+    print("{0}: {1}"
+          .format(index, character))
