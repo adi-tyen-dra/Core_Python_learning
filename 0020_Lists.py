@@ -268,7 +268,8 @@ while choice != "0":
             buying_list.append("HDMI cable")
     else:
         print("please add an option from the following list: \n")
-        for num, part in enumerate(available_list):
+        for num, part in enumerate(available_list):  # example of for loop with multile var iteration
+            # each item of loop returns multiple value hence multiple var used in for loop
             print("{0}: {1}"
                   .format(num + 1, part))  # optimized with enumerate 
             # the track of index is alredy kept and we don't need to search the entire list 
