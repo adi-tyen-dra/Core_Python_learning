@@ -161,9 +161,10 @@ print("mississippi".count("iss"))
 
 # APPENDING AN ITEM TO THE LIST
 
-# adding a computer part to buying list
+# adding a computer parts to the buying list
 
-choice = "-"  # anything other than valid option; can't use None type here
+choice = "-"  # anything other than valid option
+# we can't use None type here
 buying_list = []  # empty list
 while choice != "0":
     if choice in "123456":
@@ -195,7 +196,7 @@ print(buying_list)
 
 # ITERATING OVER A LIST
 
-# optimising the previous example with loop over list along with other changes
+# optimising the previous example with loop over list along with some other changes
 
 available_list = ["printer",
                   "mouse",
@@ -205,7 +206,7 @@ available_list = ["printer",
                   "HDMI cable",
                   ]
 # valid_choices = [str(i) for i in range(1, len(available_list) + 1)]
-# -discussed later, above is the optimal way to define valid_choice
+# discussed in later files, above is the optimal way to define valid_choice
 valid_choices = []
 for i in range(1, len(available_list) + 1):
     valid_choices.append(str(i))  # creates a list of numeric valid choices
@@ -216,13 +217,13 @@ while choice != "0":
         print("adding the {} item to your buying list"
               .format(choice))
         index = int(choice) - 1
-        part = available_list[index]
-        buying_list.append(part)
+        chosen_part = available_list[index]
+        buying_list.append(chosen_part)
     else:
         print("please add an option from the following list: \n")
-        for part in available_list:  # loop over the list
+        for chosen_part in available_list:  # loop over the list
             print("{0}: {1}"
-                  .format(available_list.index(part), part))  # not very efficient
+                  .format(available_list.index(chosen_part) + 1, part))  # not very efficient
             # the index method has to search the entire list for index each time
             # if the list was sorted binary search could've been used
     choice = input()
@@ -296,8 +297,7 @@ shrubs = []
 for datas in data:
     if "Shrub" in datas:
         shrubs.append(datas)
-    else:
+    elif "Flower" in datas:
         flowers.append(datas)
-        
 print(shrubs)
 print(flowers)
