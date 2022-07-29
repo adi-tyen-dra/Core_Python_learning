@@ -278,6 +278,7 @@ for index, character in enumerate("abcdefghij"):
 # the other, called shrubs, must contain only shrubs.
 # Write code to populate the two lists with the appropriate plants from data.
 
+# question code
 data = [
     "Andromeda - Shrub",
     "Bellflower - Flower",
@@ -289,11 +290,10 @@ data = [
     "Iris - Flower",
     "Japanese Camellia - Shrub"
 ]
-
 flowers = []
 shrubs = []
 
-# write your code here
+# my solution & given solution
 for datas in data:
     if "Shrub" in datas:
         shrubs.append(datas)
