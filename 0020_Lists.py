@@ -228,5 +228,49 @@ while choice != "0":
             print("{0}: {1}"
                   .format(available_list.index(part), part))  # not very efficient
             # the index method has to search the entire list for index each time
+            # if the list was sorted binary search could've been used
+    choice = input()
+print(buying_list)
+
+# ENUMERATE FUNCTION
+
+# The "enumerate()" function takes in an iterable as an argument, such as a list, string, tuple, or dictionary,
+# and returns the element along with a counter keeping track of the indexes of each element
+# -In addition, it can also take in an optional argument, start,
+# -which specifies the number we want the count to start at (the default is 0).
+
+# further optimization of earlier code using enumerate function
+available_list = ["1: printer",
+                  "2: mouse",
+                  "3: keyboard",
+                  "4: cpu",
+                  "5: monitor",
+                  "6: HDMI cable",
+                  "0: to finish",
+                  ]
+choice = "-"
+buying_list = []
+while choice != "0":
+    if choice in "123456":
+        print("adding the {} item to your buying list"
+              .format(choice))
+        if choice == "1":
+            buying_list.append("printer")
+        elif choice == "2":
+            buying_list.append("mouse")
+        elif choice == "3":
+            buying_list.append("keyboard")
+        elif choice == "4":
+            buying_list.append("cpu")
+        elif choice == "5":
+            buying_list.append("monitor")
+        elif choice == "6":
+            buying_list.append("HDMI cable")
+    else:
+        print("please add an option from the following list: \n")
+        for num, part in enumerate(available_list):
+            print("{0}: {1}"
+                  .format(num + 1, part))  # optimized with enumerate 
+            # the track of index is alredy kept and we don't need to search the entire list 
     choice = input()
 print(buying_list)
