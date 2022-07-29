@@ -270,3 +270,34 @@ print(buying_list)
 for index, character in enumerate("abcdefghij"):
     print("{0}: {1}"
           .format(index, character))
+
+# MINI CHALLENGE
+# We have some data that contains a mixture of flowers and shrubs, in a list.
+# Our customer would like two separate lists. One, called flowers, will contain only flowers, and
+# the other, called shrubs, must contain only shrubs.
+# Write code to populate the two lists with the appropriate plants from data.
+
+data = [
+    "Andromeda - Shrub",
+    "Bellflower - Flower",
+    "China Pink - Flower",
+    "Daffodil - Flower",
+    "Evening Primrose - Flower",
+    "French Marigold - Flower",
+    "Hydrangea - Shrub",
+    "Iris - Flower",
+    "Japanese Camellia - Shrub"
+]
+
+flowers = []
+shrubs = []
+
+# write your code here
+for datas in data:
+    if "Shrub" in datas:
+        shrubs.append(datas)
+    else:
+        flowers.append(datas)
+        
+print(shrubs)
+print(flowers)
