@@ -301,3 +301,6 @@ for datas in data:
         flowers.append(datas)
 print(shrubs)
 print(flowers)
+
+# REMOVING ITEMS FROM A LIST
+
