@@ -57,6 +57,16 @@ print(my_list.count("milk"))  # used to check entire items
 # in case of string
 print("mississippi".count("iss"))
 
+# sum function
+numbers = [1,2,3,4,5,1,4,5]
+# start parameter is not provided
+Sum = sum(numbers)
+print(Sum)  # gives 25
+# start = 10
+Sum = sum(numbers, 10)
+print(Sum)  # givves 35
+# TypeError is raised in the case when there is anything other than numbers in the list.
+
 # COMMON OPERATIONS ON MUTABLE
 
 # Note: A function is a block of organized, reusable code that is used to perform a single, related action.
@@ -241,4 +251,14 @@ print(buying_list)
 
 # SORTING THE LIST
 
+even = [2, 4, 6, 8]
+odd = [1, 3, 5, 7, 9]
+even.extend(odd)  # another way to add items to the list
+# extend method is used to add the contents of a list to the target list
+print(even)  # the addition happens without any sorting
+even.sort()  # method used to sort the list
+print(even)
+even.sort(reverse=True)  # used to sort in reversed manner
+print(even)
+# Note: list being mutable, copy of list is not created and the original list is changed
 
