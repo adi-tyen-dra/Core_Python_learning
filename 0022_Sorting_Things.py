@@ -22,3 +22,9 @@ print(number)  # the orignal list is changed and no new list is created
 print(another_number)  # this displays sorted list as it is assigned the orignal list which changed
 # note: sort() method changes the orignal list without creating any copy
 # -moreover, it doesn't return anything so assigning it to a var will give error
+
+# SORTING THINGS IN CASE INSENSITIVE MANNER
+
+print(sorted("The lazy brown Fox jumped over the quick Dog",
+             key=str.casefold))
+# works both with sort and sorted
