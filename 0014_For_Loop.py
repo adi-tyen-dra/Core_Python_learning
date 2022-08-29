@@ -175,7 +175,7 @@ else:
 # as formerly stated, this else block only executes if the entire loop ran throughout, if the loop
 # -is terminated before due to any probable cause, this else statement won't be executed
 
-#extra question: detect the series b/w ap, gp and fibonachi and predict the next term.
+# extra question: detect the series b/w ap, gp and fibonachi and predict the next term.
 
 input1 = 5
 input2 = [3, 3, 6, 9, 15]
@@ -207,3 +207,33 @@ for i in range(2, input1):
 else:
     ans = input2[input1-1] + input2[input1-2]
     print(ans, "fibonache")
+
+# extra ques2: count unique char of str2 from first and last occurrence of string1 char in string 2
+string1 = "a"
+string2 = "healo amasd frad abl sbjb"
+start = 0
+end = 0
+string2 = string2.replace(" ", "")
+for i in string2:
+    if i == string1:
+        start = string2.index(i)
+        break
+string2 = string2[::-1]
+for j in string2:
+    if j == string1:
+        end = len(string2)- string2.index(j)
+        print(string2.index(j), len(string2))
+        break
+string2 = string2[::-1]
+resultstr = string2.replace(" ", "")[start+1:end-1]
+print(resultstr)
+arrans=""
+ans=0
+for elem in resultstr:
+    if elem in arrans:
+        continue
+    else:
+        ans +=1
+        arrans = arrans+elem
+else:
+    print(ans)
