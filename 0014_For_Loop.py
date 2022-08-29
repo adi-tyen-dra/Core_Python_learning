@@ -174,3 +174,36 @@ else:
 # in above example, notice the indentation of else block is associated with for loop instead of if statement
 # as formerly stated, this else block only executes if the entire loop ran throughout, if the loop
 # -is terminated before due to any probable cause, this else statement won't be executed
+
+#extra question: detect the series b/w ap, gp and fibonachi and predict the next term.
+
+input1 = 5
+input2 = [3, 3, 6, 9, 15]
+d = input2[1]-input2[0]
+r = input2[1]//input2[0]
+for i in range(0, input1):
+    if input2[i] == input2[0] + i*d:
+        continue
+    else:
+        break
+else:
+    ans = input2[input1-1]+d
+    print(ans, "ap")
+
+for i in range(1, input1):
+    if input2[i] == input2[i-1]*r:
+        continue
+    else:
+        break
+else:
+    ans = input2[input1-1]*r
+    print(ans, "gp")
+
+for i in range(2, input1):
+    if input2[i] == input2[i-1]+input2[i-2]:
+        continue
+    else:
+        break
+else:
+    ans = input2[input1-1] + input2[input1-2]
+    print(ans, "fibonache")
