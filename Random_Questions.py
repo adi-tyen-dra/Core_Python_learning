@@ -1,4 +1,4 @@
-# ques: detect the series b/w ap, gp and fibonachi and predict the next term.
+# ques1: detect the series b/w ap, gp and fibonachi and predict the next term.
 
 input1 = 5
 input2 = [3, 3, 6, 9, 15]
@@ -31,7 +31,8 @@ else:
     ans = input2[input1-1] + input2[input1-2]
     print(ans, "fibonache")
 
-# ques: count unique char of str2 from first and last occurrence of string1 char in string 2
+# ques2: count unique char of str2 from first and last occurrence of string1 char in string 2
+
 string1 = "a"
 string2 = "healo amasd frad abl sbjb"
 start = 0
@@ -61,7 +62,8 @@ for elem in resultstr:
 else:
     print(ans)
 
-# ques: reduce given n to one and report the min possible steps; allowed operations- (n/x if x%n == 0) and (n-1)
+# ques3: reduce given n to one and report the min possible steps; allowed operations- (n/x if x%n == 0) and (n-1)
+
 def mul_finder(n):  #to find highest multiple
     max_mul=0
     for i in range(2,n):
@@ -82,4 +84,24 @@ def resolver(n):  #to resoolve n to 1
 
 n = int(input())
 ans = resolver(n)
+print(ans)
+
+# ques4: given a string str, print True if cat and hat appear same number of times in str, else print False.
+
+def cat_hat(str):
+    count1=0
+    count2=0
+    for index,i in enumerate(str):
+        if i == "c":
+            if "cat" in str[index:(index+3)]:
+                count1+=1
+        elif i == "h":
+            if "hat" in str[index:(index+3)]:
+                count2+=1
+    if count1 == count2:
+        return True
+    return False
+
+str = "zhhcathhhcckchtchhhtkhhhhathhzhckkcztkazkactzczkktzaackazcathtzazttzhat" # given str
+ans = cat_hat(str)
 print(ans)
