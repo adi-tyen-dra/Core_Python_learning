@@ -14,7 +14,7 @@ print(a % b)  # 0 modulus gives the remainder after integer division
 print()  # empty line
 
 for i in range(1, 4):  # loop prints integer till 3
-    print(a//b)  # it only uses int values for ranges so in place of 4, a/b will give error while a//b will work fine
+    print(i,a//b)  # it only uses int values for ranges so in place of 4, a/b will give error while a//b will work fine
 
 # an expression is a combination of operators, operands or other expressions that can be interpreted to some value.
 # leaving the 'a' and 'b' in line 1 and 2 (not being evaluated) along with 'i' in line 14 (not being evaluated) 
