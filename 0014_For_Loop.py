@@ -8,7 +8,7 @@
 # The set of values comes from a sequence or some other iterable object.
 # iterable obj is anything than can be iterated over; sequence is also an iterable
 # If the iterable that's iterated over can return multiple set of values for each element
-# -we may use more than one variable in the for loop (example provided in lists file, code line 271)
+# -we may use more than one variable in the for loop (example provided in lists file, code line 246)
 
 parrot = "Norwegian Blue"  # sequence string
 for character in parrot:  # for loop
