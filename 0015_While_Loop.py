@@ -113,7 +113,7 @@ else:
 # -duplicating the print lines.
 
 # my solution
-choice = None  # no initialization problem; helps to enter the first loop 
+choice = " "  # no initialization problem; helps to enter the first loop 
 while choice not in range(0, 6):  # loop1, choice not in valid range
     choice = int(input("please choose one of the following options by no.\n"
                        "1.\tlearn python\n"
@@ -135,7 +135,7 @@ while choice not in range(0, 6):  # loop1, choice not in valid range
         
 # provided solution
 
-choice = None  
+choice = " " 
 while choice != "0": 
     if choice in "12345":
         print("you chose {}"
