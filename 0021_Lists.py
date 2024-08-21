@@ -168,7 +168,7 @@ while choice != "0":
     if choice in valid_choices:
         print("adding the {} item to your buying list"
               .format(choice))
-        index = choice - 1
+        index = int(choice) - 1
         part = available_list[index]
         buying_list.append(part)
     else:
